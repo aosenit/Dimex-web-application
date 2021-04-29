@@ -1,0 +1,1117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tienne:wght@400;700;900&display=swap");
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #2935A4;
+  --back-color: #E5E5E5;
+  --text-color:black;
+  --style-color:#FF7171;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+body {
+  background-color: var(--back-color);
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.contain {
+  margin: 0 10rem;
+}
+
+header {
+  width: 100%;
+  background: url(./images/header-background.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--primary-color);
+}
+
+#home {
+  padding: 0 3rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 100vh;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6rem;
+  position: relative;
+}
+
+.header-nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav .logo img {
+  height: 30px;
+}
+
+.header-nav .logo .inner {
+  margin-left: 5px;
+}
+
+.header-nav .logo .inner img:first-child {
+  width: 70px;
+  display: block;
+}
+
+.header-nav .toggle {
+  display: none;
+}
+
+.header-nav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav nav ul li {
+  margin-left: 2.2rem;
+}
+
+.header-nav nav ul li a {
+  -webkit-transition: linear 0.5s color;
+  transition: linear 0.5s color;
+}
+
+.header-nav nav ul li a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.header-nav nav ul .active {
+  border-bottom: var(--primary-color) solid 2px;
+}
+
+.header-text {
+  margin-left: 10rem;
+  margin-top: 5.5rem;
+}
+
+.header-text h4 {
+  font-family: Tienne;
+  font-size: 2.2rem;
+}
+
+.header-text p {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.header-side-cars {
+  width: 30%;
+  position: absolute;
+  top: 20.5em;
+  right: 0;
+}
+
+.header-side-cars .header-cars {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.header-side-cars .header-cars img {
+  width: 100%;
+}
+
+.header-side-cars .hide-sm {
+  display: none;
+}
+
+.header-scrollbar {
+  height: 3em;
+  width: 2.5em;
+  border-radius: 35%;
+  margin: 6rem auto 5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.header-scrollbar img:first-child {
+  width: 100%;
+  position: relative;
+  -webkit-transition: -webkit-transform ease .5s;
+  transition: -webkit-transform ease .5s;
+  transition: transform ease .5s;
+  transition: transform ease .5s, -webkit-transform ease .5s;
+}
+
+.header-scrollbar img:first-child:hover {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+}
+
+.header-scrollbar img:last-child {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 70%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header::after {
+  content: '';
+  height: .1rem;
+  background-color: #A8B1FF;
+  width: 30%;
+  margin: auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+}
+
+main {
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+#services {
+  background-color: var(--primary-color);
+  margin: 2em auto 10rem;
+}
+
+#services h2 {
+  width: 100%;
+  text-align: center;
+  font-family: Tienne;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  padding: 1rem 0;
+}
+
+#services .service-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+}
+
+#services .service-grid .service-box {
+  background-color: var(--back-color);
+  height: 15.5rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#services .service-grid .service-box .image {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 2rem;
+}
+
+#services .service-grid .service-box .image img {
+  width: 100%;
+  height: 100%;
+}
+
+#services .service-grid .service-box p {
+  font-size: .65rem;
+}
+
+#services #automobile, #services #logistics {
+  margin: 16rem auto 0;
+  width: 100%;
+}
+
+#services #automobile h2, #services #logistics h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+#services .automobile-grid, #services .logistics-grid {
+  position: relative;
+  height: 25rem;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+#services .automobile-grid .grid, #services .logistics-grid .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+#services .automobile-grid .grid .grid-box, #services .logistics-grid .grid .grid-box {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 13rem;
+  background-color: var(--primary-color);
+  z-index: 2;
+}
+
+#services .automobile-grid .grid .grid-box .image, #services .logistics-grid .grid .grid-box .image {
+  height: 50%;
+  width: 100%;
+}
+
+#services .automobile-grid .grid .grid-box .image img, #services .logistics-grid .grid .grid-box .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#services .automobile-grid .background-left, #services .logistics-grid .background-left {
+  background: url(./images/automobile-background.svg);
+  background-repeat: no-repeat;
+  background-color: rgba(234, 123, 123, 0.08);
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+}
+
+#services .automobile-grid .button, #services .logistics-grid .button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 10rem;
+  -webkit-transition: linear 0.5s opacity;
+  transition: linear 0.5s opacity;
+}
+
+#services .automobile-grid .button:hover, #services .logistics-grid .button:hover {
+  opacity: .8;
+}
+
+#services #automobile .grid-box {
+  position: relative;
+}
+
+#services #automobile .grid-box p {
+  font-size: .6rem;
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#services #automobile .grid-box p .brand-type {
+  color: #00AB82;
+}
+
+#services #automobile .grid-box p .km {
+  color: #273298;
+}
+
+#services #automobile .grid-box p .year {
+  color: #F00000;
+}
+
+#services #automobile .grid-box h5 {
+  font-size: .65rem;
+  font-weight: 400;
+  padding: 0 .5rem;
+  text-align: left;
+}
+
+#services #automobile .grid-box h4 {
+  position: absolute;
+  left: 25%;
+  bottom: .5rem;
+  font-weight: 500;
+}
+
+#services #logistics .background-right {
+  background: url(./images/logistics-background.svg);
+  background-repeat: no-repeat;
+  background-color: rgba(32, 175, 255, 0.08);
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+}
+
+#services #logistics .button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 10rem;
+}
+
+#services #logistics .grid-box h5 {
+  font-size: .65rem;
+  font-weight: 500;
+  padding: 2rem .5rem 0;
+  text-align: left;
+}
+
+#services #logistics .grid-box .car-availability {
+  font-size: .6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem .5rem 2rem;
+  color: #273298;
+}
+
+#services #outsourcing {
+  background: url(./images/outsourcing.svg);
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 27em;
+  margin: 10rem auto 7rem;
+  color: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#services #outsourcing .button {
+  -webkit-transition: linear 0.5s opacity;
+  transition: linear 0.5s opacity;
+}
+
+#services #outsourcing .button:hover {
+  opacity: .8;
+}
+
+#services #general-contractor {
+  margin: 3rem auto -10em;
+  background-color: var(--primary-color);
+}
+
+#services #general-contractor .general-contractor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30em;
+  width: 100%;
+}
+
+#services #general-contractor .general-contractor .general-contractor-text {
+  width: 100%;
+}
+
+#services #general-contractor .general-contractor .general-contractor-image {
+  height: 100%;
+  width: 100%;
+}
+
+#services #general-contractor .general-contractor .general-contractor-image img:last-child {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#services #general-contractor .button {
+  -webkit-transition: linear 0.5s opacity;
+  transition: linear 0.5s opacity;
+}
+
+#services #general-contractor .button:hover {
+  opacity: .8;
+}
+
+#services #general-contractor .general-contractor-text {
+  margin-left: 10rem;
+}
+
+#services #general-contractor .general-contractor-text h2:first-child {
+  text-align: left;
+  font-size: 34px;
+  font-family: Tienne;
+}
+
+footer {
+  background-color: #273298;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 13rem;
+  color: var(--primary-color);
+  width: 100%;
+}
+
+footer .footer-content {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer ul li {
+  margin-right: 0rem;
+}
+
+footer ul a {
+  -webkit-transition: linear 0.5s color;
+  transition: linear 0.5s color;
+}
+
+footer ul a:hover {
+  color: rgba(225, 225, 225, 0.7);
+}
+
+footer .footer-icons {
+  margin: 1rem 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-icons i {
+  color: #909BFF;
+  font-size: 1rem;
+  margin-right: .9rem;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+}
+
+footer .footer-icons i:hover {
+  color: var(--primary-color);
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+footer .footer-icons p {
+  font-size: .7rem;
+  margin-left: -3rem;
+  opacity: .6;
+}
+
+footer .copyright p {
+  font-size: .8rem;
+  opacity: .9;
+}
+
+@media screen and (max-width: 1024px) {
+  .contain {
+    margin: 0 5rem;
+  }
+  #home h2, #services h2, #services #general-contractor .general-contractor .general-contractor-text h2 {
+    font-size: 28px;
+  }
+  header .header-text {
+    margin: 1.5rem 0rem 0;
+    padding: 0 1.5rem;
+  }
+  header .header-text h4 {
+    font-size: 1.8rem;
+  }
+  header .header-text p {
+    font-size: .9rem;
+  }
+  header .header-side-cars {
+    top: 11.5rem;
+    width: 30%;
+    margin: auto;
+  }
+  header .header-side-cars img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+  }
+  header .header-scrollbar {
+    margin-top: 4rem;
+  }
+  #services #automobile, #services #logistics {
+    margin-top: 8rem;
+  }
+  #automobile .automobile-grid .button {
+    margin-right: 5rem;
+  }
+  #services #logistics .button {
+    margin-left: 5rem;
+  }
+  #services #general-contractor .general-contractor .general-contractor-text {
+    margin-left: 5rem;
+  }
+  #services #outsourcing {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contain {
+    margin: 0 3rem;
+  }
+  header .header-text {
+    margin: 0rem 0rem 0;
+    padding: 0 .5rem;
+  }
+  header .header-text h4 {
+    font-size: 1.5rem;
+    margin-bottom: -1rem;
+  }
+  header .header-text p {
+    font-size: .75rem;
+  }
+  header .logo h3 .option {
+    display: none;
+  }
+  header .header-side-cars {
+    top: 8.5rem;
+  }
+  header .header-scrollbar {
+    margin-top: 1.5rem;
+  }
+  #automobile .automobile-grid .button {
+    margin-right: 3rem;
+  }
+  #services #logistics .button {
+    margin-left: 3rem;
+  }
+  #services #general-contractor .general-contractor .general-contractor-text {
+    margin-left: 3rem;
+  }
+  #services #general-contractor .general-contractor .general-contractor-image {
+    margin-right: -2rem;
+  }
+  #services .service-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  footer {
+    min-height: 22em;
+  }
+  footer .footer-content {
+    width: 100%;
+    height: 80%;
+    margin: 0 1.5rem;
+  }
+  footer .footer-content ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  footer .footer-content ul li {
+    margin-bottom: .2rem;
+  }
+  footer .footer-content .footer-icons {
+    width: 90%;
+    margin-right: 1rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer .footer-content .footer-icons p {
+    font-size: .7rem;
+    margin: .7rem 0;
+    text-align: left;
+  }
+  footer .footer-content .footer-icons p span {
+    display: block;
+  }
+  footer .footer-content .footer-icons .icons {
+    width: 40%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-content .copyright {
+    width: 90%;
+  }
+  footer .footer-content .copyright p {
+    text-align: center;
+    margin: -1rem auto 0;
+    word-spacing: .1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header, main, footer {
+    overflow: hidden;
+  }
+  #home h2, #services h2, #services #general-contractor .general-contractor .general-contractor-text h2 {
+    font-size: 22px;
+  }
+  #home p, #services p, #services #general-contractor .general-contractor .general-contractor-text p {
+    font-size: .7rem;
+  }
+  header {
+    background: none;
+    background-color: var(--primary-color);
+  }
+  header .header-nav {
+    background-color: var(--style-color);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    padding: 0;
+    width: 100%;
+  }
+  header .header-nav .logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 1rem;
+  }
+  #home {
+    padding: 0;
+  }
+  #home .toggle {
+    display: inline-block;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    padding-right: 1rem;
+    -webkit-transition: linear 0.5s color;
+    transition: linear 0.5s color;
+  }
+  #home .toggle:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  #home .toggle:active {
+    -webkit-transition-delay: .5s;
+            transition-delay: .5s;
+  }
+  #home ul {
+    position: absolute;
+    right: -100%;
+    top: 6rem;
+    width: 100%;
+    height: 40vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    z-index: 6;
+    background-color: var(--style-color);
+    -webkit-transition: right linear .5s;
+    transition: right linear .5s;
+    cursor: pointer;
+  }
+  #home ul li {
+    padding: 0 auto;
+  }
+  #home .show {
+    right: 0;
+  }
+  #home .header-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10rem;
+  }
+  #home .header-side-cars {
+    padding-top: 0;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: -6rem;
+    margin-bottom: 14rem;
+    height: 15rem;
+    width: 90%;
+  }
+  #home .header-side-cars .hide-sm {
+    display: block;
+    position: absolute;
+  }
+  #home .header-side-cars .hide-bg {
+    display: none;
+  }
+  #home .header-scrollbar {
+    display: none;
+  }
+  #home .header-bottom-line {
+    width: 100%;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    -webkit-transform: none;
+            transform: none;
+    display: none;
+  }
+  #home .header-bottom-line img {
+    width: 50%;
+  }
+  header::after {
+    width: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: auto;
+    left: 50%;
+  }
+  #home .header-text {
+    padding: auto 1rem;
+  }
+  #home .header-text p {
+    font-size: .7rem;
+    padding: 0 1rem;
+  }
+  #services {
+    position: relative;
+    margin: 0;
+  }
+  #services .contain {
+    margin: 0 1.5rem;
+    text-align: center;
+  }
+  #services h2 {
+    margin-bottom: 1.5rem;
+  }
+  #services .service-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #automobile::before, #logistics::before {
+    content: '';
+    height: .1rem;
+    background-color: #A8B1FF;
+    width: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: auto;
+    left: 50%;
+    position: absolute;
+  }
+  #automobile, #logistics {
+    position: relative;
+  }
+  #services #automobile h2, #services #logistics h2 {
+    text-align: center;
+  }
+  #services .automobile-grid .grid, #services .logistics-grid .grid {
+    position: relative;
+    width: 400%;
+    overflow: hidden;
+    -webkit-animation: slider linear infinite 10s;
+            animation: slider linear infinite 10s;
+  }
+  #services .automobile-grid .grid .grid-box, #services .logistics-grid .grid .grid-box {
+    width: 95%;
+  }
+  @-webkit-keyframes slider {
+    0% {
+      -webkit-transform: translateX(1%);
+              transform: translateX(1%);
+    }
+    10% {
+      -webkit-transform: translateX(1%);
+              transform: translateX(1%);
+    }
+    20% {
+      -webkit-transform: translateX(-20%);
+              transform: translateX(-20%);
+    }
+    30% {
+      -webkit-transform: translateX(-40%);
+              transform: translateX(-40%);
+    }
+    40% {
+      -webkit-transform: translateX(-60%);
+              transform: translateX(-60%);
+    }
+    50% {
+      -webkit-transform: translateX(-78%);
+              transform: translateX(-78%);
+    }
+    60% {
+      -webkit-transform: translateX(-78%);
+              transform: translateX(-78%);
+    }
+    70% {
+      -webkit-transform: translateX(-60%);
+              transform: translateX(-60%);
+    }
+    80% {
+      -webkit-transform: translateX(-40%);
+              transform: translateX(-40%);
+    }
+    90% {
+      -webkit-transform: translateX(-20%);
+              transform: translateX(-20%);
+    }
+    100% {
+      -webkit-transform: translateX(1%);
+              transform: translateX(1%);
+    }
+  }
+  @keyframes slider {
+    0% {
+      -webkit-transform: translateX(1%);
+              transform: translateX(1%);
+    }
+    10% {
+      -webkit-transform: translateX(1%);
+              transform: translateX(1%);
+    }
+    20% {
+      -webkit-transform: translateX(-20%);
+              transform: translateX(-20%);
+    }
+    30% {
+      -webkit-transform: translateX(-40%);
+              transform: translateX(-40%);
+    }
+    40% {
+      -webkit-transform: translateX(-60%);
+              transform: translateX(-60%);
+    }
+    50% {
+      -webkit-transform: translateX(-78%);
+              transform: translateX(-78%);
+    }
+    60% {
+      -webkit-transform: translateX(-78%);
+              transform: translateX(-78%);
+    }
+    70% {
+      -webkit-transform: translateX(-60%);
+              transform: translateX(-60%);
+    }
+    80% {
+      -webkit-transform: translateX(-40%);
+              transform: translateX(-40%);
+    }
+    90% {
+      -webkit-transform: translateX(-20%);
+              transform: translateX(-20%);
+    }
+    100% {
+      -webkit-transform: translateX(1%);
+              transform: translateX(1%);
+    }
+  }
+  #services .automobile-grid .background-left, #services #logistics .background-right {
+    width: 100%;
+    background-size: cover;
+  }
+  #automobile .automobile-grid .button,
+  #services #logistics .button {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #automobile .automobile-grid .button img,
+  #services #logistics .button img {
+    width: 35%;
+  }
+  .focus {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  #services #outsourcing {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #services #outsourcing h2 {
+    margin-bottom: -10rem;
+    margin-top: 2rem;
+  }
+  #services #outsourcing .button,
+  #services #general-contractor .button {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #services #outsourcing .button img,
+  #services #general-contractor .button img {
+    width: 35%;
+  }
+  #services #general-contractor {
+    margin: 0;
+  }
+  #services #general-contractor .general-contractor {
+    position: relative;
+    background: url(./images/general-contractor-image.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-color: var(--primary-color);
+    width: 100%;
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+  }
+  #services #general-contractor .general-contractor::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  #services #general-contractor .general-contractor .general-contractor-text {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  #services #general-contractor .general-contractor .general-contractor-text h2 {
+    text-align: center;
+  }
+  #services #general-contractor .general-contractor .general-contractor-text p {
+    margin: -2rem 0 4rem;
+  }
+  #services #general-contractor .general-contractor .general-contractor-text p {
+    margin: -2rem 2rem 13.8rem;
+  }
+  #services #general-contractor .general-contractor .general-contractor-image {
+    display: none;
+  }
+  #services #logistics .grid-box .car-availability p {
+    font-size: .6rem;
+  }
+  footer .footer-icons .icons {
+    width: 60%;
+  }
+  footer .footer-content .footer-icons p, footer .footer-content .copyright p {
+    font-size: .55rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #home .header-text h4 {
+    font-size: 1rem;
+  }
+  #home .header-text p {
+    word-spacing: .15rem;
+  }
+  #services #outsourcing p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  footer .footer-content ul {
+    padding-bottom: 0rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
