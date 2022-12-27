@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tienne:wght@400;700;900&display=swap");
 :root {
-  --primary-color: #FFFFFF;
-  --secondary-color: #2935A4;
-  --back-color: #E5E5E5;
-  --text-color:black;
-  --style-color:#FF7171;
+  --primary-color: #ffffff;
+  --secondary-color: #2935a4;
+  --back-color: #e5e5e5;
+  --text-color: black;
+  --style-color: #ff7171;
 }
 
 * {
@@ -13,12 +13,14 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 14px;
 }
 
 html {
   scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-padding-top: 80px;
 }
 
 ::-webkit-scrollbar {
@@ -48,8 +50,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
 .container {
@@ -152,7 +154,7 @@ header {
 
 .header-text h4 {
   font-family: Tienne;
-  font-size: 2.2rem;
+  font-size: 3rem;
 }
 
 .header-text p {
@@ -183,8 +185,8 @@ header {
 }
 
 .header-scrollbar {
-  height: 3em;
-  width: 2.5em;
+  height: 3.8em;
+  width: 3em;
   border-radius: 35%;
   margin: 6rem auto 5rem;
   -webkit-transform: translateX(-50%);
@@ -194,10 +196,10 @@ header {
 .header-scrollbar img:first-child {
   width: 100%;
   position: relative;
-  -webkit-transition: -webkit-transform ease .5s;
-  transition: -webkit-transform ease .5s;
-  transition: transform ease .5s;
-  transition: transform ease .5s, -webkit-transform ease .5s;
+  -webkit-transition: -webkit-transform ease 0.5s;
+  transition: -webkit-transform ease 0.5s;
+  transition: transform ease 0.5s;
+  transition: transform ease 0.5s, -webkit-transform ease 0.5s;
 }
 
 .header-scrollbar img:first-child:hover {
@@ -215,9 +217,9 @@ header {
 }
 
 header::after {
-  content: '';
-  height: .1rem;
-  background-color: #A8B1FF;
+  content: "";
+  height: 0.1rem;
+  background-color: #a8b1ff;
   width: 30%;
   margin: auto;
   -webkit-transform: translateX(-50%);
@@ -257,7 +259,7 @@ main {
 
 #services .service-grid .service-box {
   background-color: var(--back-color);
-  height: 15.5rem;
+  height: 18.5rem;
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -274,27 +276,31 @@ main {
 }
 
 #services .service-grid .service-box p {
-  font-size: .65rem;
+  font-size: 0.85rem;
 }
 
-#services #automobile, #services #logistics {
+#services #automobile,
+#services #logistics {
   margin: 16rem auto 0;
   width: 100%;
 }
 
-#services #automobile h2, #services #logistics h2 {
+#services #automobile h2,
+#services #logistics h2 {
   text-align: left;
   margin-bottom: 1rem;
 }
 
-#services .automobile-grid, #services .logistics-grid {
+#services .automobile-grid,
+#services .logistics-grid {
   position: relative;
-  height: 25rem;
+  height: 30rem;
   width: 100%;
   margin-top: 3rem;
 }
 
-#services .automobile-grid .grid, #services .logistics-grid .grid {
+#services .automobile-grid .grid,
+#services .logistics-grid .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -306,20 +312,23 @@ main {
   height: 100%;
 }
 
-#services .automobile-grid .grid .grid-box, #services .logistics-grid .grid .grid-box {
+#services .automobile-grid .grid .grid-box,
+#services .logistics-grid .grid .grid-box {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: 13rem;
+  min-height: 18rem;
   background-color: var(--primary-color);
   z-index: 2;
 }
 
-#services .automobile-grid .grid .grid-box .image, #services .logistics-grid .grid .grid-box .image {
-  height: 50%;
+#services .automobile-grid .grid .grid-box .image,
+#services .logistics-grid .grid .grid-box .image {
+  height: 60% !important;
   width: 100%;
 }
 
-#services .automobile-grid .grid .grid-box .image img, #services .logistics-grid .grid .grid-box .image img {
+#services .automobile-grid .grid .grid-box .image img,
+#services .logistics-grid .grid .grid-box .image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -328,7 +337,8 @@ main {
      object-position: center;
 }
 
-#services .automobile-grid .background-left, #services .logistics-grid .background-left {
+#services .automobile-grid .background-left,
+#services .logistics-grid .background-left {
   background: url(./images/automobile-background.svg);
   background-repeat: no-repeat;
   background-color: rgba(234, 123, 123, 0.08);
@@ -339,7 +349,8 @@ main {
   position: absolute;
 }
 
-#services .automobile-grid .button, #services .logistics-grid .button {
+#services .automobile-grid .button,
+#services .logistics-grid .button {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -348,8 +359,9 @@ main {
   transition: linear 0.5s opacity;
 }
 
-#services .automobile-grid .button:hover, #services .logistics-grid .button:hover {
-  opacity: .8;
+#services .automobile-grid .button:hover,
+#services .logistics-grid .button:hover {
+  opacity: 0.8;
 }
 
 #services #automobile .grid-box {
@@ -357,8 +369,8 @@ main {
 }
 
 #services #automobile .grid-box p {
-  font-size: .6rem;
-  padding: .5rem;
+  font-size: 0.6rem;
+  padding: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,7 +382,7 @@ main {
 }
 
 #services #automobile .grid-box p .brand-type {
-  color: #00AB82;
+  color: #00ab82;
 }
 
 #services #automobile .grid-box p .km {
@@ -378,20 +390,20 @@ main {
 }
 
 #services #automobile .grid-box p .year {
-  color: #F00000;
+  color: #f00000;
 }
 
 #services #automobile .grid-box h5 {
-  font-size: .65rem;
+  font-size: 0.65rem;
   font-weight: 400;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   text-align: left;
 }
 
 #services #automobile .grid-box h4 {
   position: absolute;
   left: 25%;
-  bottom: .5rem;
+  bottom: 0.5rem;
   font-weight: 500;
 }
 
@@ -415,14 +427,14 @@ main {
 }
 
 #services #logistics .grid-box h5 {
-  font-size: .65rem;
+  font-size: 0.65rem;
   font-weight: 500;
-  padding: 2rem .5rem 0;
+  padding: 2rem 0.5rem 0;
   text-align: left;
 }
 
 #services #logistics .grid-box .car-availability {
-  font-size: .6rem;
+  font-size: 0.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,7 +443,7 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem .5rem 2rem;
+  padding: 1rem 0.5rem 2rem;
   color: #273298;
 }
 
@@ -439,7 +451,7 @@ main {
   background: url(./images/outsourcing.svg);
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.9);
-  height: 27em;
+  height: 30em;
   margin: 10rem auto 7rem;
   color: var(--primary-color);
   display: -webkit-box;
@@ -461,7 +473,7 @@ main {
 }
 
 #services #outsourcing .button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 #services #general-contractor {
@@ -507,7 +519,7 @@ main {
 }
 
 #services #general-contractor .button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 #services #general-contractor .general-contractor-text {
@@ -580,9 +592,9 @@ footer .footer-icons {
 }
 
 footer .footer-icons i {
-  color: #909BFF;
+  color: #909bff;
   font-size: 1rem;
-  margin-right: .9rem;
+  margin-right: 0.9rem;
   -webkit-transition: linear 0.5s all;
   transition: linear 0.5s all;
 }
@@ -594,21 +606,23 @@ footer .footer-icons i:hover {
 }
 
 footer .footer-icons p {
-  font-size: .7rem;
+  font-size: 0.7rem;
   margin-left: -3rem;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 footer .copyright p {
-  font-size: .8rem;
-  opacity: .9;
+  font-size: 0.8rem;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 1024px) {
   .contain {
     margin: 0 5rem;
   }
-  #home h2, #services h2, #services #general-contractor .general-contractor .general-contractor-text h2 {
+  #home h2,
+  #services h2,
+  #services #general-contractor .general-contractor .general-contractor-text h2 {
     font-size: 28px;
   }
   header .header-text {
@@ -619,7 +633,7 @@ footer .copyright p {
     font-size: 1.8rem;
   }
   header .header-text p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   header .header-side-cars {
     top: 11.5rem;
@@ -634,7 +648,8 @@ footer .copyright p {
   header .header-scrollbar {
     margin-top: 4rem;
   }
-  #services #automobile, #services #logistics {
+  #services #automobile,
+  #services #logistics {
     margin-top: 8rem;
   }
   #automobile .automobile-grid .button {
@@ -657,14 +672,14 @@ footer .copyright p {
   }
   header .header-text {
     margin: 0rem 0rem 0;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
   }
   header .header-text h4 {
     font-size: 1.5rem;
     margin-bottom: -1rem;
   }
   header .header-text p {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
   header .logo h3 .option {
     display: none;
@@ -708,7 +723,7 @@ footer .copyright p {
     margin-bottom: 3rem;
   }
   footer .footer-content ul li {
-    margin-bottom: .2rem;
+    margin-bottom: 0.2rem;
   }
   footer .footer-content .footer-icons {
     width: 90%;
@@ -722,8 +737,8 @@ footer .copyright p {
             flex-direction: column-reverse;
   }
   footer .footer-content .footer-icons p {
-    font-size: .7rem;
-    margin: .7rem 0;
+    font-size: 0.7rem;
+    margin: 0.7rem 0;
     text-align: left;
   }
   footer .footer-content .footer-icons p span {
@@ -745,20 +760,26 @@ footer .copyright p {
   footer .footer-content .copyright p {
     text-align: center;
     margin: -1rem auto 0;
-    word-spacing: .1rem;
+    word-spacing: 0.1rem;
     padding-bottom: 1rem;
   }
 }
 
 @media screen and (max-width: 700px) {
-  header, main, footer {
+  header,
+  main,
+  footer {
     overflow: hidden;
   }
-  #home h2, #services h2, #services #general-contractor .general-contractor .general-contractor-text h2 {
+  #home h2,
+  #services h2,
+  #services #general-contractor .general-contractor .general-contractor-text h2 {
     font-size: 22px;
   }
-  #home p, #services p, #services #general-contractor .general-contractor .general-contractor-text p {
-    font-size: .7rem;
+  #home p,
+  #services p,
+  #services #general-contractor .general-contractor .general-contractor-text p {
+    font-size: 0.7rem;
   }
   header {
     background: none;
@@ -793,8 +814,8 @@ footer .copyright p {
     color: rgba(0, 0, 0, 0.5);
   }
   #home .toggle:active {
-    -webkit-transition-delay: .5s;
-            transition-delay: .5s;
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
   }
   #home ul {
     position: absolute;
@@ -814,8 +835,8 @@ footer .copyright p {
             justify-content: space-evenly;
     z-index: 6;
     background-color: var(--style-color);
-    -webkit-transition: right linear .5s;
-    transition: right linear .5s;
+    -webkit-transition: right linear 0.5s;
+    transition: right linear 0.5s;
     cursor: pointer;
   }
   #home ul li {
@@ -873,7 +894,7 @@ footer .copyright p {
     padding: auto 1rem;
   }
   #home .header-text p {
-    font-size: .7rem;
+    font-size: 0.7rem;
     padding: 0 1rem;
   }
   #services {
@@ -891,10 +912,11 @@ footer .copyright p {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  #automobile::before, #logistics::before {
-    content: '';
-    height: .1rem;
-    background-color: #A8B1FF;
+  #automobile::before,
+  #logistics::before {
+    content: "";
+    height: 0.1rem;
+    background-color: #a8b1ff;
     width: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -902,20 +924,24 @@ footer .copyright p {
     left: 50%;
     position: absolute;
   }
-  #automobile, #logistics {
+  #automobile,
+  #logistics {
     position: relative;
   }
-  #services #automobile h2, #services #logistics h2 {
+  #services #automobile h2,
+  #services #logistics h2 {
     text-align: center;
   }
-  #services .automobile-grid .grid, #services .logistics-grid .grid {
+  #services .automobile-grid .grid,
+  #services .logistics-grid .grid {
     position: relative;
     width: 400%;
     overflow: hidden;
     -webkit-animation: slider linear infinite 10s;
             animation: slider linear infinite 10s;
   }
-  #services .automobile-grid .grid .grid-box, #services .logistics-grid .grid .grid-box {
+  #services .automobile-grid .grid .grid-box,
+  #services .logistics-grid .grid .grid-box {
     width: 95%;
   }
   @-webkit-keyframes slider {
@@ -1010,7 +1036,8 @@ footer .copyright p {
               transform: translateX(1%);
     }
   }
-  #services .automobile-grid .background-left, #services #logistics .background-right {
+  #services .automobile-grid .background-left,
+  #services #logistics .background-right {
     width: 100%;
     background-size: cover;
   }
@@ -1063,7 +1090,7 @@ footer .copyright p {
   }
   #services #general-contractor .general-contractor::before {
     position: absolute;
-    content: '';
+    content: "";
     top: 0;
     right: 0;
     width: 100%;
@@ -1089,13 +1116,20 @@ footer .copyright p {
     display: none;
   }
   #services #logistics .grid-box .car-availability p {
-    font-size: .6rem;
+    font-size: 0.6rem;
+  }
+  #outsourcing {
+    display: -ms-grid !important;
+    display: grid !important;
+    place-content: center !important;
+    gap: 6rem !important;
   }
   footer .footer-icons .icons {
     width: 60%;
   }
-  footer .footer-content .footer-icons p, footer .footer-content .copyright p {
-    font-size: .55rem;
+  footer .footer-content .footer-icons p,
+  footer .footer-content .copyright p {
+    font-size: 0.55rem;
   }
 }
 
@@ -1104,7 +1138,7 @@ footer .copyright p {
     font-size: 1rem;
   }
   #home .header-text p {
-    word-spacing: .15rem;
+    word-spacing: 0.15rem;
   }
   #services #outsourcing p {
     margin-left: 2rem;
